@@ -109,45 +109,37 @@ public class string07 {
 		// ArpaN
 		for (char t : name1) {
 			rev = rev + t;
-		}
+	}
 		System.out.println(rev);
 
 	}
 
-	// Program 07
+	// Program 07 // sum and average
 
-	int digits2[] = { 5, 7, 10, 12, 15, 17, 19, 23, 28 };
-	// sum and average
-
-	int sum = 0;
+	int digits2 [] = { 5, 7, 10, 12, 15, 17, 19, 23, 28 };
+    int suma = 0;
 	float avg = 0;
-	{
 
-		for (int j : digits2) {
-			sum = sum + j;
+
+	for(int j:digits2); {
+		suma = suma + j;
 		}
 
-		System.out.println(sum);
-		avg = sum / digits2.length;
-		System.out.println(avg);
+	System.out.println(suma);
+	avg=suma/digits2.length;
+	System.out.println(avg);
 
-		// Program 08
+	// Program 08
 
-		int[][] multiple = { { 10, 20, 30 }, { 101, 202, 303, 404 } };
+ int[][] multiple = { { 10, 20, 30 }, { 101, 202, 303, 404 } };
 
-		// multiple ====> [
 
-		// [10, 20, 30]
-		// [101, 202, 303, 404]
-		//
-		// ]
+	System.out.println(multiple[0][0]);
+	System.out.println(multiple[0][1]);
+	System.out.println(multiple[1][1]);
+	System.out.println(multiple[1][3]);
+	System.out.println(multiple[1][0]);
+	System.out.println(multiple[0][2]);
 
-		System.out.println(multiple[0][0]);
-		System.out.println(multiple[0][1]);
-		System.out.println(multiple[1][1]);
-		System.out.println(multiple[1][3]);
-		System.out.println(multiple[1][0]);
-		System.out.println(multiple[0][2]);
-
-	}
+}
 }
