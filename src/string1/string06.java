@@ -14,7 +14,7 @@ public class string06 {
 				// sum and average
 				
 				int suma = 0;
-				float avg =0;
+				float avg = 0;
 				
 				for(int a:numbersc) {
 					suma = suma + a;

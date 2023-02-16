@@ -117,16 +117,14 @@ public class string07 {
 	// Program 07 // sum and average
 
 	int digits2 [] = { 5, 7, 10, 12, 15, 17, 19, 23, 28 };
-    int suma = 0;
+    int sum = 0;
 	float avg = 0;
-
-
-	for(int j:digits2); {
-		suma = suma + j;
+    for(int j : digits2); {
+		sum = sum + j ;
 		}
 
-	System.out.println(suma);
-	avg=suma/digits2.length;
+	System.out.println(sum);
+	avg=sum/digits2.length;
 	System.out.println(avg);
 
 	// Program 08
