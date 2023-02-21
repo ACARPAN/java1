@@ -4,31 +4,39 @@ public class Userdata2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-Bank Bofa =new Bank ("Bofa", "Personal",5000);
-Bank Chase = new Bank ("Chase","Saving", 10000);
-Bank Amex = new Bank ("Amex", "Travel", 20000);
-System.out.println(Bofa.bankaccount);
-System.out.println(Chase.bankname);
-System.out.println(Bofa.credit);
-Amex.deposit();
-Chase.trasfer();
+		Tesla usa []= {
+				new Tesla ("Model 3", "White",2022),
+				new Tesla ("Model Y", "Black", 2023),
+				new Tesla ("Model X", "Blue", 2022),
+		};
+		for(Tesla a:usa ) {
+			//a.displaycolor();
+		System.out.println(a.color);
+		System.out.println(a.model);
+		System.out.println(a.year);
+		}
+		for (int a=0; a<usa.length; a++)	{
+			System.out.println(usa[a].color);
+		}
 	}
-
 }
-class Bank{
-	String bankname;
-	String bankaccount;
-	int credit;
+//User defined
+		class Tesla {
+			String model;
+			String color;
+			int year;
+			public Tesla (String model, String color, int year) {
+				this.model= model;
+				this.color= color;
+				this.year= year;
+			}
+			public void displaymodel() {
+				System.out.println(this.model);
+			}
+			public void displaycolor () {
+				System.out.println(this.color);
+			}
+		
+
 	
-	public Bank (String bn,String ba,int cr) {
-		this.bankname= bn;
-		this.bankaccount = ba;
-		this.credit = cr;
-	}
-	public void deposit () {
-		System.out.println("you can deposit  your first saving");
-	}
-	public void trasfer () {
-		System.out.println("you can trasfer your amount to any account");
-	}
 }
