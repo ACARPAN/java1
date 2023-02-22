@@ -30,7 +30,6 @@ public class Userdata5 {
 		System.out.println(Anup.SName);
 		System.out.println(Anup.lastName);
 		System.out.println(Anup.firstName);
-		System.out.println(Anup.FfirstName);
 		Anup.FName();
 		Anup.GName();
 		Anup.SName();
