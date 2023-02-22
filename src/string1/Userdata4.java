@@ -48,6 +48,19 @@ public class Userdata4 {
 		set3.setCity("Millbrae");
 		System.out.println(set3.getCity());
 
+		Country set4 = new Country();
+		set4.Country = "Italy";
+		System.out.println(set4.Country);
+
+		Country1 set5 = new Country1();
+		set5.setCountryName("Paris");
+		String updatedCountry = set5.getCountryName();
+		System.out.println(updatedCountry);
+
+		Country2 set6 = new Country2("Spain");
+		System.out.println(set6.getCountryName());
+		set6.setCountryName("Maldives");
+		System.out.println(set6.getCountryName());
 	}
 
 }
@@ -116,4 +129,36 @@ class Figure2 {
 		return this.city;
 	}
 
+}
+
+class Country {
+	String Country = "USA";
+}
+
+class Country1 {
+	private String country1 = "Nepal";
+
+	public void setCountryName(String CN) { // setter
+		this.country1 = CN;
+	}
+
+	public String getCountryName() {
+		return this.country1;
+	}
+}
+
+class Country2 {
+	private String country1;
+
+	public Country2(String CT) {
+		this.country1 = CT;
+	}
+
+	void setCountryName(String ct) {// while updating the data
+		this.country1 = ct;
+	}
+
+	String getCountryName() {// while getting the data
+		return this.country1;
+	}
 }
