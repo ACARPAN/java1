@@ -90,7 +90,7 @@ public class string02 {
 					// 0   1   2   3   4   5   6   
 					// H   e   t   a   u   d   a-------> but total length is  7.
 					char a1 = cityF.charAt(3);
-					System.out.println(a1);	 // a
+					//System.out.println(a1);	 // a
 					System.out.println(cityF.length());
 
 					
@@ -118,16 +118,16 @@ public class string02 {
 					
 					
 					String cityI = "Biratnagar";
-					int extent2 =cityI.length();
-					System.out.println(extent2);
+					//int extent2 =cityI.length();
+					//System.out.println(extent2);
 					
 					//Regular display
 					
-					for(int z= 0; z <extent2 ; z++) {
+					for(int z= 0; z <cityI.length() ; z++) {
 						System.out.println(cityI.charAt(z));
 						
 						//Reverse display
-						for (int i = extent2 -1; i >=0 ; i--) {
+						for (int i = cityI.length()-1; i >=0 ; i--) {
 							System.out.println(cityI.charAt(i));
 						}
 						
