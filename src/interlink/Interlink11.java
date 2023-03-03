@@ -5,9 +5,9 @@ public class Interlink11 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		D aa = new D();
-aa.five();
-aa.seven();
-aa.nine();
+		aa.five();
+		aa.seven();
+		aa.nine();
 	}
 
 }
