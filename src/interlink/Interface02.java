@@ -10,6 +10,8 @@ public class Interface02 {
 		w.loan();
 		w.save();
 		w.studentLoan();
+		Rectangle R = new Rectangle();
+		R.getArea(5, 10);
 
 	}
 
@@ -63,4 +65,17 @@ class IME implements ADBRules, NMB {
 		System.out.println("Ime has a interest");
 
 	}
+}
+
+interface Airthematic {
+	public void getArea(int length, int breadth);
+}
+
+class Rectangle implements Airthematic {
+
+	@Override
+	public void getArea(int length, int breadth) {
+		System.out.println("The area of rectangle is " + (length * breadth));
+	}
+
 }
