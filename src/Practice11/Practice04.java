@@ -9,6 +9,8 @@ bb.A();
 bb.Alphabet();
 bb.B();
 bb.displayCity();
+bb.first();
+bb.three();
 	}
 
 }
@@ -67,14 +69,12 @@ class Alphabet extends Foundation implements One, Two {
 		// TODO Auto-generated method stub
 		System.out.println("i am first");
 	}
-	
 
 	@Override
 	public void A() {
 		// TODO Auto-generated method stub
 		System.out.println("i am number one");
 	}
-	
 
 	@Override
 	public void three() {
