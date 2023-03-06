@@ -6,8 +6,8 @@ public class Default {
 		// TODO Auto-generated method stub
 		Square bb = new Square();
 		bb.getCordinated();
-		bb.getPerimeter();
 		bb.getPerimeter(4, "a");
+		bb.getCordinated(0);
 
 	}
 
@@ -15,8 +15,6 @@ public class Default {
 
 interface Geometry {
 	public void getPerimeter(int num, String a);
-
-	void getPerimeter();
 
 	// default method
 	default void getCordinated() {
@@ -32,13 +30,7 @@ class Square implements Geometry {
 
 	@Override
 	public void getPerimeter(int num, String a) {
-		System.out.println("Perimeter of square is" + "" + (num + a));
-	}
-
-	@Override
-	public void getPerimeter() {
-		System.out.println("Perimeter of square");
-
+		System.out.println("Perimeter of square is" + " " + (num + a));
 	}
 
 }
