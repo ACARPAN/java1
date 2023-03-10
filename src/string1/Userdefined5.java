@@ -84,7 +84,7 @@ class Director extends Supervisor {
 	}
 }
 
-//Heirarchical inheritance
+//Hierarchical inheritance
 class Animal {
 	String Name;
 	String color;
