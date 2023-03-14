@@ -24,7 +24,7 @@ class Students {
 		this.age = age;
 	}
 
-	// basic method
+	// normal method
 
 	public void displayFullname() {
 		System.out.println(this.fullName);
