@@ -19,6 +19,8 @@ public class Enum1 {
 
 		TryTees cc = new TryTees(Measurements.XL);
 		cc.getShirtType();
+		TryTees dd = new TryTees(Measurements.SMALL);
+		dd.getShirtType();
 	}
 
 }
@@ -31,6 +33,7 @@ class TryTees {
 	}
 
 	public String getTeesType() {
+		// switch
 		switch (Ram) {
 		case SMALL:
 			System.out.println("KIDS");
@@ -49,24 +52,25 @@ class TryTees {
 			return "EXTRA LARGE";
 
 		default:
-			System.out.println("Have you own SIZE ordered");
-			return "Have you own SIZE ordered";
+			System.out.println("Have your own SIZE ordered");
+			return "Have your own SIZE ordered";
 		}
 
 	}
 
 	public void getShirtType() {
+		// break switch
 		switch (Ram) {
 		case SMALL:
-			System.out.println("KIDS");
+			System.out.println("KIDS under 7");
 			break;
 
 		case MEDIUM:
-			System.out.println("YOUNG");
+			System.out.println("YOUNG upto 16 age");
 			break;
 
 		case LARGE:
-			System.out.println("BIG GUY");
+			System.out.println("BIG GUY want bigger");
 			break;
 
 		case XL:
@@ -74,7 +78,7 @@ class TryTees {
 			break;
 
 		default:
-			System.out.println("Have you own SIZE ordered");
+			System.out.println("Have your own SIZE ordered");
 
 		}
 
