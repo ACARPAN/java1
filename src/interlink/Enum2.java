@@ -4,7 +4,9 @@ enum Vehicles {
 
 	// enum constants calling with constructor;
 
-	SUV("Mercedes"), SEDAN("Tesla 3"), COUPE("Porsche");
+	SUV("Mercedes"), 
+	SEDAN("Tesla 3"),
+	COUPE("Porsche");
 
 	private final String sizeCar;
 
